@@ -1,0 +1,80 @@
+* {
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #595555;
+}
+:root {
+  --border-radius: 10px;
+}
+body {
+  font-family: inherit;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebecee;
+  padding: 0.8rem;
+  width: 28rem;
+  height: 36rem;
+  overflow: hidden;
+  position: relative;
+}
+.main:before {
+  content: "";
+  background-color: #ea3226;
+  transform: skewY(160deg);
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.main::after {
+  content: "";
+  background-color: #ea3226;
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#display {
+  background-color: #ea3226;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+#textIp {
+  border: none;
+  background-color: transparent;
+  padding: 1.5rem 0.8rem;
+  outline: none;
+  font-size: 3rem;
+  width: 100%;
+  text-align: right;
+}
+.buttons {
+  background-color: #fff;
+  padding-top: 3rem;
+  flex: 1;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+}
+input[type="button"] {
+  background-color: #ebecee;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+  width: 16%;
+  aspect-ratio: 1/1;
+  margin: 0px 4px;
+}
