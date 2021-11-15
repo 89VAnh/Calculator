@@ -88,7 +88,7 @@ const actions = {
     }
   },
   handleR(result) {
-    var afterPoint = 10 ** 12;
+    var afterPoint = 10 ** 9;
     if (result % 1 != 0) {
       result = Math.round(result * afterPoint) / afterPoint;
     }
